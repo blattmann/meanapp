@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { NgModule } from '@angular/core';
-// import { CollapseModule } from 'ng2-bootstrap/collapse';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
+import { FlashMessagesService } from 'angular2-flash-messages';
 
 @Component({
   selector: 'app-navbar',
@@ -8,31 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 
-// @NgModule({
-//   imports: [CollapseModule.forRoot()]
-// })
-
 export class NavbarComponent implements OnInit {
-  constructor() { }
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private flashMessage: FlashMessagesService) {
+  }
 
   ngOnInit() {
   }
+
+  onLogoutClick(){
+    this.authService.logout();
+    let msg = 'You are logged out.';
+    this.flashMessage.show(msg, {cssClass:'alert-success', timeout: 3000});
+    this.router.navigate(['/login']);
+    return false;
+  }
 }
-
-
-// export class NavbarComponent implements OnInit {
-//   public isCollapsed:boolean = false;
-//
-//   public collapsed(event:any):void {
-//     console.log(event);
-//   }
-//
-//   public expanded(event:any):void {
-//     console.log(event);
-//   }
-//
-//   constructor() { }
-//
-//   ngOnInit() {
-//   }
-// }
