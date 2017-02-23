@@ -1,5 +1,4 @@
 <nav class="navbar navbar-default">
-<!-- <nav class="navbar navbar-inverse navbar-fixed-top"> -->
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -18,17 +17,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/login']">Login</a></li>
         <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/register']">Register</a></li>
+        <li><a (click)="onLogoutClick()" href="#">Logout</a></li>
       </ul>
     </div><!--/.nav-collapse -->
-
-    <!-- <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed">Toggle collapse</button>
-    <hr>
-    <div (collapsed)="collapsed($event)"
-         (expanded)="expanded($event)"
-         [collapse]="isCollapsed"
-         class="card card-block card-header">
-      <div class="well well-lg">Some content</div>
-    </div> -->
 
   </div>
 </nav>
