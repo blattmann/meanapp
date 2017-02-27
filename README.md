@@ -1,7 +1,8 @@
 # MEANapp #
 
 Complete MEAN stack application with authentication using json web tokens.
-Angular CLI, MNongoDB and NPM need to be installed to run / build the app.
+Angular CLI, MongoDB and NPM need to be installed to run / build the app.
+Angular 2 is being used in this example app.
 
 ### Version ###
 1.0.0
