@@ -1,53 +1,78 @@
-# MEANapp
+# MEANapp #
 
-Complete MEAN stack application with authentication using json web tokens
+Complete MEAN stack application with authentication using json web tokens.
+Angular CLI, MNongoDB and NPM need to be installed to run / build the app.
 
-### Version
+### Version ###
 1.0.0
 
-## Usage
+## Usage ##
+---
 
+### Installation ###
 
-### Installation
+#### Mac OSX and Homebrew ####
 
-Install MongoDB:
+* Install Homebrew: https://brew.sh/
+
+* Install Node / NPM: https://changelog.com/posts/install-node-js-with-homebrew-on-os-x
+
+* Install MongoDB:
 
 ```sh
-brew install mongodb
+$ brew install mongodb
 ```
 
 In case you have an older version of MongoDB installed you might ned to remove it first before you can install the latest version:
 ```sh
-brew unlink mongodb
+$ brew unlink mongodb
+```
+
+#### Linux / Windows ####
+
+* Install Node / NPM: https://nodejs.org/en/
+
+* Install MongoDB: https://www.mongodb.com/download-center?jmp=nav#community
+
+#### All OS ####
+
+Install Angular CLI:
+
+```sh
+$ npm install -g angular-cli
 ```
 
 Install _nodemon_ to automatically update any changes in your code while the node server is running.
 ```sh
-npm install -g nodemon
+$ npm install -g nodemon
 ```
 
 Run nodemon:
 ```sh
-nodemon
+$ nodemon
 ```
 
-
-Install the dependencies
+Install the dependencies:
 ```sh
 $ npm install
 ```
 
-Start MongoDB (if not yet started)
+Start MongoDB (if not yet started):
 ```sh
 $ mongod
 ```
 
-Start MongoDB terminal if needed:
+Start MongoDB shell if needed:
 ```sh
 $ mongo
 ```
 
-Run app
+Build the app:
+```sh
+$ ng build
+```
+
+Run the app:
 ```sh
 $ npm start
 ```
