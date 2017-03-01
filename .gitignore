@@ -9,7 +9,7 @@ _tools
 _work
 ionic
 
-**/node_modules
+node_modules/
 dev/platforms/
 dev/plugins/
 push
@@ -24,3 +24,4 @@ testapps
 dist
 dev/www/css
 upload/
+public/*

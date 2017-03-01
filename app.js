@@ -48,7 +48,13 @@ app.use('/users', users);
 // Index route
 app.get('/', (req, res) => {
   res.send('Invalid Endpoint');
-})
+});
+
+// Redirect all requests to the main html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+
 
 // Start server in Terminal with 'npm start' or 'nodemon' if nodemon in installed
 app.listen(port, () => {
