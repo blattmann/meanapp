@@ -57,7 +57,7 @@ router.post('/authenticate', (req, res, next) => {
 
         res.json({
           success: true,
-          token: 'JWT' + token,
+          token: 'JWT ' + token, // The space after JWT is needed!!! Do NOT remove it!
           user: {
             id: user._id,
             name: user.name,
