@@ -90,7 +90,7 @@ $ cd angular-src
 $ ng build
 ```
 
-Run the app:
+Run the app (from app root folder only!):
 
 ```sh
 $ npm start
