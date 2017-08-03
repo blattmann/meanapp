@@ -50,12 +50,6 @@ Install _nodemon_ to automatically update any changes in your code while the nod
 $ npm install -g nodemon
 ```
 
-Run nodemon:
-
-```sh
-$ nodemon
-```
-
 Install the dependencies:
 
 ```sh
@@ -77,6 +71,10 @@ $ mongo
 Run the dev mode:
 
 ```sh
+# Run nodemon
+$ nodemon
+
+# Switch to dev folder
 $ cd angular-src
 $ ng serve
 ```
@@ -86,6 +84,7 @@ The app should be available on: <http://localhost:4200>
 Build the app:
 
 ```sh
+# Switch to dev folder
 $ cd angular-src
 $ ng build
 ```
