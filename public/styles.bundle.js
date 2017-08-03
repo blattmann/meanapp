@@ -9,7 +9,7 @@ webpackJsonp([2,4],{
 var content = __webpack_require__(671);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(706)(content, {});
+var update = __webpack_require__(707)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -99,7 +99,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 706:
+/***/ 707:
 /***/ (function(module, exports) {
 
 /*
@@ -115,7 +115,7 @@ var stylesInDom = {},
 		};
 	},
 	isOldIE = memoize(function() {
-		return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
+		return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
 	}),
 	getHeadElement = memoize(function () {
 		return document.head || document.getElementsByTagName("head")[0];
@@ -352,7 +352,7 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 710:
+/***/ 711:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(391);
@@ -360,5 +360,5 @@ module.exports = __webpack_require__(391);
 
 /***/ })
 
-},[710]);
+},[711]);
 //# sourceMappingURL=styles.bundle.map
